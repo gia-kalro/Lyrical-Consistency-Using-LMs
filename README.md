@@ -20,7 +20,7 @@ The smaller datasets, split by time period, used for training, evaluation and va
   val2010s.tsv
   test2010s.tsv
 
-The artist label's for the all the dataset are:
+The artist label's for the all the datasets are:
 
 Full dataset:
 - 0: Miley Cyrus
