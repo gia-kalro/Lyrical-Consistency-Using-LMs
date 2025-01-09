@@ -1,6 +1,6 @@
 # Lyrical-Consistency-Using-LMs
 
-Datasets: 
+**Datasets: **
 
 The full datasets containing all artists, time periods and genre used for training, evaluation and validation are:
 - allLyricstrain.tsv
