@@ -1,0 +1,37 @@
+exp: TextClassification
+
+mode:
+    - train
+
+models: 
+    hf_text_classification_model:
+      - distilbert/distilbert-base-uncased
+
+#loadPretrained: False
+
+#samplePercent: 100
+
+epochs: 20
+batchSize: 16
+
+numLabels: 9
+
+id2label:
+    0: Mariah Carey
+    1: Christina Aguilera
+    2: Britney Spears
+    3: Green Day
+    4: Pearl Jam
+    5: Blink-182
+    6: Shania Twain
+    7: Garth Brooks
+    8: Dixie Chicks
+
+
+trainfpath: ./data/train1990s.tsv
+
+validfpath: ./data/val1990s.tsv
+
+modelfpath: ./model/distilbert1990s
+
+device: cuda

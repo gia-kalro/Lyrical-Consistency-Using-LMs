@@ -1,0 +1,30 @@
+exp: TextClassification
+
+mode:
+    - evaluate
+
+models: 
+  hf_text_classification_model:
+        - ./model/distilbert1990s
+
+samplePercent: 100
+
+numLabels: 9
+
+id2label:
+    0: Mariah Carey
+    1: Christina Aguilera
+    2: Britney Spears
+    3: Green Day
+    4: Pearl Jam
+    5: Blink-182
+    6: Shania Twain
+    7: Garth Brooks
+    8: Dixie Chicks
+
+
+datafpath: ./data/test1990s.tsv
+predfpath: ./predictions/pred1990s.tsv
+
+
+device: cuda

@@ -1,0 +1,31 @@
+exp: TextClassification
+
+mode:
+    - evaluate
+
+models: 
+  hf_text_classification_model:
+        - ./model/distilbert2010s
+
+samplePercent: 100
+
+numLabels: 9
+
+id2label:
+    0: Miley Cyrus
+    1: Taylor Swift
+    2: Demi Lovato
+    3: Coldplay
+    4: Imagine Dragons
+    5: Foo Fighters
+    6: Carrie Underwood
+    7: Jason Aldean
+    8: Miranda Lambert
+
+
+
+datafpath: ./data/test2010s.tsv
+predfpath: ./predictions/pred2010s.tsv
+
+
+device: cuda

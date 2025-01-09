@@ -1,0 +1,36 @@
+exp: TextClassification
+
+mode:
+    - train
+
+models: 
+    hf_text_classification_model:
+      - distilbert/distilbert-base-uncased
+
+#loadPretrained: False
+
+#samplePercent: 100
+
+epochs: 20
+batchSize: 16
+
+numLabels: 9
+
+id2label:
+    0: Aretha Franklin
+    1: Etta James
+    2: Nancy Sinatra
+    3: Elvis Presley
+    4: Chuck Berry
+    5: The Beatles
+    6: Johnny Cash
+    7: Dolly Parton
+    8: Glen Campbell
+
+trainfpath: ./data/train1960s.tsv
+
+validfpath: ./data/val1960s.tsv
+
+modelfpath: ./model/distilbert1960s
+
+device: cuda

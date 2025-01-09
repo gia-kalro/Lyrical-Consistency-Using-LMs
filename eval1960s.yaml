@@ -1,0 +1,31 @@
+exp: TextClassification
+
+mode:
+    - evaluate
+
+models: 
+    hf_text_classification_model:
+       - ./model/distilbert1960s
+
+samplePercent: 100
+
+numLabels: 9
+
+id2label:
+    0: Aretha Franklin
+    1: Etta James
+    2: Nancy Sinatra
+    3: Elvis Presley
+    4: Chuck Berry
+    5: The Beatles
+    6: Johnny Cash
+    7: Dolly Parton
+    8: Glen Campbell
+
+
+datafpath: ./data/test1960s.tsv
+
+predfpath: ./predictions/pred1960s.tsv
+
+
+device: cuda
