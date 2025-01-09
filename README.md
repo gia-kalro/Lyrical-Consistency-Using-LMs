@@ -108,7 +108,7 @@ Each time the model runs, it will output its predictions. To aggregate the predi
 Analyzing the results:
 - 
 
-To analyze the results, you can use the confusion_matrix function in metrics.py for a visual represantion. To calculate F1-score, precision, recall, and accuracy, you can use metrics.py. For further analysis on the data, such as computing overlap of words between artistis, use analyze_data.py
+ To calculate F1-score, precision, recall, and accuracy, you can use metrics.py. To create a confusion matrix, you can use the confusion_matrix function in metrics.py. For further analysis on the data, such as computing overlap of words between artistis, use analyze_data.py
   
 
 
