@@ -1,6 +1,7 @@
 # Lyrical-Consistency-Using-LMs
 
-** Datasets: **
+Datasets:
+- 
 
 The full datasets containing all artists, time periods and genre used for training, evaluation and validation are:
 - allLyricstrain.tsv
@@ -83,6 +84,15 @@ Full dataset:
 - 7: Jason Aldean
 - 8: Miranda Lambert
 
+
+Training the model:
+- 
+After choosing which dataset you are running, choose the corresponding yaml file for training. Note that the yaml for training the full data set is the train.yaml file. Using NLPScholar, you will run a TextClassification experiment on train mode. Depending on how your directories are set up, you may have to update the 
+- trainfpath (path to the training dataset)
+- validfpath (path to validation dataset)
+- modelfpath (path where you are storing the model)
+
+ 
 
 
 
