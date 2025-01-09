@@ -92,6 +92,8 @@ After choosing which dataset you are running, choose the corresponding yaml file
 - validfpath (path to validation dataset)
 - modelfpath (path where you are storing the model)
 
+You can use the run_multi.sh for training the full dataset and the run_periods.sh for training the smaller datasets. 
+
  
 
 
