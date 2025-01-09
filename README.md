@@ -87,12 +87,31 @@ Full dataset:
 
 Training the model:
 - 
-After choosing which dataset you are running, choose the corresponding yaml file for training. Note that the yaml for training the full data set is the train.yaml file. Using NLPScholar, you will run a TextClassification experiment on train mode. Depending on how your directories are set up, you may have to update the 
+After choosing which dataset you are running, choose the corresponding .yaml file for training. Note that the .yaml for training the full data set is the train.yaml file. Using NLPScholar, you will run a TextClassification experiment on train mode. Depending on how your directories are set up, you may have to update the 
 - trainfpath (path to the training dataset)
 - validfpath (path to validation dataset)
 - modelfpath (path where you are storing the model)
 
 You can use the run_multi.sh for training the full dataset and the run_periods.sh for training the smaller datasets. 
+
+Evaluating the model:
+- 
+To evaluate the model, choose the corresponding .yaml file. Note that the .yaml file for evaluating the full data set is the evaluate.yaml file. You will now run this TextClassification task on NLPScholar using evaluate mode. Depending on how your directories are set up, you may have to update the 
+- datafpath (path to testing dataset)
+- predfpath (the name of the output and where it will be stored)
+- id2label (labels that correspond with artists (e.g. 0 corresponds to Miley Cyrus))
+
+You can use the run_multi.sh for evaluating the full dataset and the run_periods.sh for evaluating the smaller datasets. 
+
+Each time the model runs, it will output its predictions. To aggregate the predictions and get an overall predcitions by choosing the mode artist, utilize the aggregate_runs function in metrics.py. 
+
+Analyzing the results:
+- 
+
+To analyze the results, you can use the confusion_matrix function in metrics.py for a visual represantion. To calculate F1-score, precision, recall, and accuracy, you can use metrics.py. For further analysis on the data, such as computing overlap of words between artistis, use analyze_data.py
+  
+
+
 
  
 
